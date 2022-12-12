@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: rgb(225, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(201, 211, 221);
+    padding: 20px;
+    border: 2px solid rgb(213, 206, 206);
+    box-shadow: 3px 4px 2px 2px rgb(213 206 206);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(193, 186, 186);
+    box-shadow: 2px 2px 2px 1px rgb(213 206 206);
+    border-radius: 10px;
+}
+
+.container input[type=number] {
+    background-color: rgb(209, 209, 250);
+    color: white;
+    outline: none;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.container input[type=number]:focus {
+    background-color: rgb(181, 169, 169);
+}
+
+button, input[type=submit] {
+    background-color: rgb(80, 80, 237);
+    color: white;
+    transition: .4s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover{
+    background-color: white;
+    color: rgb(80, 80, 237);
+
+}
+
+.erro {
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 4px;
+    right: 6px;
+    /* padding: 10px; */
+    text-align: center;
+    line-height: 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 3px 4px 2px 2px rgb(213 206 206);
+}
+
+.res {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(213, 206, 206);
+}
+
+.hide {
+    display: none;
+}

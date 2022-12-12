@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Algoritmo 120</title>
+</head>
+<body>
+    <section class="form container">
+        <h1>Preencha os campos abaixo</h1>
+        <p class="erro hide"><i class="bi bi-exclamation-circle-fill"></i> Digite números diferentes para cada campo</p>
+        <form id="form">
+            <input type="number" name="n1" id="n1" placeholder="Primeiro número...">
+            <input type="number" name="n2" id="n2" placeholder="Segundo número...">
+            <input type="number" name="n3" id="n3" placeholder="Terceiro número...">
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section class="modal container hide">
+        <div class="title">
+            <h1>Aqui esta seu resultados</h1>
+            <button id="fechar"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="res">
+            <span>Maior Número</span> 
+            <span id="maior"></span>
+        </div>
+        <div class="res">
+            <span>Intermediário</span>
+            <span id="intermediario"></span>
+        </div>
+        <div class="res">
+            <span>Menor Número</span>
+            <span id="menor"></span>
+        </div>
+    </section>
+</body>
+</html>
